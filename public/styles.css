@@ -1,3 +1,6 @@
+/* ---------- hidden attribute must win over any display rule ---------- */
+[hidden]{display:none !important}
+
 /* ---------- tokens ---------- */
 :root{
   --brand:#e23b3b;
