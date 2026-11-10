@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gyan Panda | Online Classroom Learning App</title>
+<meta name="description" content="An exceptional e-learning platform for Class 10 SEBA students. Assam's leading educational platform you can trust." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐼</text></svg>" />
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">🐼</span>
+      <span class="brand-text">Gyan Panda<small>Real Learning Partner</small></span>
+    </a>
+
+    <nav class="nav">
+      <a href="#choice">Why Us</a>
+      <a href="#demo">Demo Classes</a>
+      <a href="#scholarship">Scholarship Test</a>
+      <a href="#stories">Success Stories</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="topbar-actions">
+      <button id="calcToggle" class="btn btn-ghost" aria-expanded="false" aria-controls="calcPanel" title="Calculator">
+        <span class="calc-icon">🧮</span><span class="btn-label">Calculator</span>
+      </button>
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.dpvtechnology.gyanpanda" target="_blank" rel="noopener">Download Now</a>
+    </div>
+  </div>
+
+  <!-- ============ HIDDEN CALCULATOR (easter egg) ============ -->
+  <div class="calc-panel" id="calcPanel" hidden>
+    <div class="calc-head">
+      <span>Calculator</span>
+      <button id="calcClose" class="calc-x" aria-label="Close calculator">×</button>
+    </div>
+    <output class="calc-display" id="calcDisplay">0</output>
+    <div class="calc-keys" id="calcKeys">
+      <button data-k="C" class="k-fn">C</button>
+      <button data-k="(" class="k-fn">(</button>
+      <button data-k=")" class="k-fn">)</button>
+      <button data-k="back" class="k-fn">⌫</button>
+
+      <button data-k="7">7</button>
+      <button data-k="8">8</button>
+      <button data-k="9">9</button>
+      <button data-k="/" class="k-op">÷</button>
+
+      <button data-k="4">4</button>
+      <button data-k="5">5</button>
+      <button data-k="6">6</button>
+      <button data-k="*" class="k-op">×</button>
+
+      <button data-k="1">1</button>
+      <button data-k="2">2</button>
+      <button data-k="3">3</button>
+      <button data-k="-" class="k-op">−</button>
+
+      <button data-k="0">0</button>
+      <button data-k=".">.</button>
+      <button data-k="=" class="k-eq">=</button>
+      <button data-k="+" class="k-op">+</button>
+    </div>
+    <p class="calc-hint">Psst… type <strong>150824</strong> then <strong>=</strong></p>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<main id="top">
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Class 10 · SEBA / ASSEB</p>
+        <h1>Assam's leading educational platform you can trust.</h1>
+        <p class="hero-sub">An Exceptional E-Learning Platform for Class 10 SEBA Students.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="#demo">Experience a Demo Class Now</a>
+          <a class="btn btn-outline btn-lg" href="tel:+916000474592">Call 6000474592</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>450,000+</strong><span>students have thrived on this platform</span></div>
+          <div><strong>Rank 1</strong><span>GPST 2025</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="https://static.wixstatic.com/media/4707d8_f6e3cd53b5d847a89c978a7704438ebb~mv2.png/v1/crop/x_336,y_109,w_506,h_901/fill/w_290,h_517,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4707d8_f6e3cd53b5d847a89c978a7704438ebb~mv2.png" alt="Gyan Panda app preview" loading="eager" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY US ================= -->
+  <section class="section" id="choice">
+    <p class="eyebrow center">What Makes Gyan Panda Your Best Choice?</p>
+    <h2 class="center">A Learning Platform Students Rely On.</h2>
+    <p class="lead center">Over 450,000 students have thrived on this platform, achieving remarkable success in their educational journey.</p>
+
+    <div class="grid-3">
+      <article class="card">
+        <span class="card-icon">🎥</span>
+        <h3>Chapter-wise Video Lectures</h3>
+        <p>Every chapter and topic explained in Assamese and English medium, mapped to the SEBA syllabus.</p>
+      </article>
+      <article class="card">
+        <span class="card-icon">📝</span>
+        <h3>Notes &amp; Question Banks</h3>
+        <p>Handwritten notes, previous year papers and model questions for focused revision.</p>
+      </article>
+      <article class="card">
+        <span class="card-icon">🧑‍🏫</span>
+        <h3>Live Doubt Clearing</h3>
+        <p>Ask your doubts and get answers from subject teachers who know the board inside out.</p>
+      </article>
+      <article class="card">
+        <span class="card-icon">📊</span>
+        <h3>Tests &amp; Analytics</h3>
+        <p>Weekly tests with instant results so you always know exactly where you stand.</p>
+      </article>
+      <article class="card">
+        <span class="card-icon">🏆</span>
+        <h3>Scholarship Support</h3>
+        <p>GPST and merit rewards that put money back in your pocket for scoring high.</p>
+      </article>
+      <article class="card">
+        <span class="card-icon">📱</span>
+        <h3>Learn Anywhere</h3>
+        <p>Downloaded lectures play offline — study on the bus, at home, or in a village with weak network.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= DEMO CLASSES ================= -->
+  <section class="section section-alt" id="demo">
+    <h2 class="center">Experience a Demo Class Now</h2>
+    <div class="grid-2">
+      <article class="lesson">
+        <div class="lesson-thumb">🎬</div>
+        <div class="lesson-body">
+          <h3>দুটা চলকত ৰৈখিক সমীকৰণৰ যোৰ</h3>
+          <p>গণিত, Class 10 - অসমীয়া মাধ্যম</p>
+          <a class="btn btn-primary" href="#contact">Watch Demo</a>
+        </div>
+      </article>
+      <article class="lesson">
+        <div class="lesson-thumb">🎬</div>
+        <div class="lesson-body">
+          <h3>Life Processes</h3>
+          <p>Science, Class 10 - English Medium</p>
+          <a class="btn btn-primary" href="#contact">Watch Demo</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= CALL BAR ================= -->
+  <a class="call-bar" href="tel:+916000474592">
+    Ready to join Gyan Panda? Call us now at <strong>6000474592</strong>
+  </a>
+
+  <!-- ================= SCHOLARSHIP ================= -->
+  <section class="section" id="scholarship">
+    <div class="split">
+      <div>
+        <h2>Gyan Panda Scholarship Test</h2>
+        <p class="lead">The Gyan Panda Scholarship Test is a prestigious exam for Class 10 students, offering an opportunity to showcase their talent. This test is dedicated to nurturing and rewarding the brightest young minds on their academic journey.</p>
+        <a class="btn btn-primary btn-lg" href="#contact">Register for GPST</a>
+      </div>
+      <img class="split-img" src="https://static.wixstatic.com/media/4707d8_93b7a75e8d7a438cb596a703e786552ef000.jpg/v1/fill/w_385,h_322,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/4707d8_93b7a75e8d7a438cb596a703e786552ef000.jpg" alt="Gyan Panda Scholarship Test" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- ================= STORIES ================= -->
+  <section class="section section-alt" id="stories">
+    <p class="eyebrow center">What Makes Students Fall in Love with Gyan Panda?</p>
+    <h2 class="center">Your Success is Our Success. Take a Look at Our Students' Success Stories.</h2>
+    <div class="grid-3 stories">
+      <article class="story"><div class="story-thumb">▶</div><h3>Gyan Panda HSLC 2023 ত সপ্তম স্থানপ্ৰাপ্ত জোনাক কাশ্যপৰ সাক্ষাৎকাৰ</h3><span>07:03</span></article>
+      <article class="story"><div class="story-thumb">▶</div><h3>HSLC 2023 ত সপ্তম স্থান লাভ কৰা Sudarshana Bhuyan ৰ মনৰ কথা</h3><span>03:56</span></article>
+      <article class="story"><div class="story-thumb">▶</div><h3>গণিত, উচ্চ গণিত, সমাজ বিজ্ঞানত ১০০ ৰ ভিতৰত ১০০ পোৱা Priyakshi ৰ মনৰ কথা</h3><span>01:29</span></article>
+      <article class="story"><div class="story-thumb">▶</div><h3>মেট্ৰিকত পালে ৫৮১ | জ্ঞান পাণ্ডাত কি কি পঢ়িছিল?</h3><span>01:09</span></article>
+      <article class="story"><div class="story-thumb">▶</div><h3>মেট্ৰিকত গণিত ১০০ ৰ ভিতৰত ১০০ পোৱা Kabyashree Goshwami ৰ মনৰ কথা</h3><span>01:04</span></article>
+      <article class="story"><div class="story-thumb">▶</div><h3>গণিত আৰু উচ্চ গণিতত ১০০ ৰ ভিতৰত ১০০ পোৱা Kallul Gogoi ৰ মনৰ কথা</h3><span>01:25</span></article>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact" class="footer">
+  <div class="footer-inner">
+    <div>
+      <h4>Gyan Panda</h4>
+      <p>Real Learning Partner</p>
+      <a href="https://play.google.com/store/apps/details?id=com.dpvtechnology.gyanpanda" target="_blank" rel="noopener">Download Now</a>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <p><a href="tel:+916000474592">6000474592</a></p>
+      <p><a href="mailto:official@gyanpanda.com">official@gyanpanda.com</a></p>
+    </div>
+    <div>
+      <h4>Help Centre</h4>
+      <p>Jorhat, Assam, India</p>
+      <p>Mon – Sat, 9 AM – 7 PM</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <p>Gyan Panda · EdTech</p>
+      <p>Founder: Manash Boruah</p>
+    </div>
+  </div>
+  <p class="copyright">© <span id="year"></span> Gyan Panda. Clone build — demo purposes.</p>
+</footer>
+
+<!-- ================= CHAT LAUNCHER ================= -->
+<button id="chatLauncher" class="chat-launcher" aria-label="Open student chat" hidden>
+  💬 <span id="chatBadge" class="chat-badge" hidden>0</span>
+</button>
+
+<!-- ================= CHAT OVERLAY ================= -->
+<div class="chat-overlay" id="chatOverlay" hidden>
+  <div class="chat-window" role="dialog" aria-modal="true" aria-label="Student live chat">
+
+    <!-- join screen -->
+    <div class="join-screen" id="joinScreen">
+      <div class="join-card">
+        <span class="join-emoji">🐼</span>
+        <h3>Student Lounge</h3>
+        <p>Live chat with everyone online right now. Be nice, no spam.</p>
+        <form id="joinForm" autocomplete="off">
+          <input id="nameInput" maxlength="20" placeholder="Your name" required />
+          <button class="btn btn-primary" type="submit">Join Chat</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- chat screen -->
+    <div class="chat-body" id="chatBody" hidden>
+      <aside class="online-panel" id="onlinePanel">
+        <div class="online-head">
+          <span>Online</span>
+          <span class="online-count" id="onlineCount">0</span>
+        </div>
+        <ul class="online-list" id="onlineList"></ul>
+        <div class="me-card" id="meCard"></div>
+      </aside>
+
+      <section class="chat-main">
+        <header class="chat-head">
+          <button id="onlineToggle" class="chat-icon-btn" aria-label="Toggle online list">👥</button>
+          <div>
+            <strong>Student Lounge</strong>
+            <small id="chatStatus">Connecting…</small>
+          </div>
+          <button id="chatClose" class="chat-icon-btn" aria-label="Close chat">✕</button>
+        </header>
+
+        <div class="messages" id="messages" aria-live="polite"></div>
+        <p class="typing-line" id="typingLine"></p>
+
+        <div class="emoji-picker" id="emojiPicker" hidden></div>
+
+        <form class="composer" id="composer" autocomplete="off">
+          <button type="button" id="emojiBtn" class="chat-icon-btn" aria-label="Emojis">😊</button>
+          <input id="messageInput" maxlength="500" placeholder="Type a message…" autocomplete="off" />
+          <button type="submit" class="send-btn" aria-label="Send">➤</button>
+        </form>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
